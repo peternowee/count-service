@@ -6,7 +6,7 @@ app.get('/', function( req, res ) {
 
 app.get( "/count", async function( req, res ) {
   const resp = await query( `
-    SELECT COUNT(*) WHERE {
+    SELECT (COUNT(*) AS ?triples) WHERE {
       GRAPH <http://mu.semte.ch/graphs/public> {
         ?s ?p ?o. } }
   ` );
