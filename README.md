@@ -14,9 +14,9 @@ version: '3.4'
 
 services:
   count:
-    build: https://github.com/peternowee/count-service.git#v0.1.0
+    build: https://github.com/peternowee/count-service.git#v0.2.0
     links:
-      - triplestore:database
+      - database:database
 ```
 
 Add rules to `dispatcher.ex` to dispatch requests to the static file
