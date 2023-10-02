@@ -14,7 +14,7 @@ version: '3.4'
 
 services:
   count:
-    build: https://github.com/peternowee/count-service.git#v0.2.0
+    build: https://github.com/peternowee/count-service.git#v0.2.1
     links:
       - database:database
 ```
