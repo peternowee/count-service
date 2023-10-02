@@ -1,4 +1,21 @@
 {
+  "name": "count-service",
+  "description": "Microservice returning the count of triples",
+  "version": "0.2.1-alpha",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peternowee/count-service.git"
+  },
+  "author": "Peter Nowee <peter@peternowee.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/peternowee/count-service/issues"
+  },
+  "homepage": "https://github.com/peternowee/count-service#readme",
   "devDependencies": {
     "eslint": "^8.50.0",
     "eslint-config-prettier": "^9.0.0",
