@@ -19,10 +19,8 @@ services:
       - database:database
 ```
 
-Add rules to `dispatcher.ex` to dispatch requests to the static file
-service.
+Add rules to `dispatcher.ex` to dispatch requests to this service. E.g.
 
-E.g.
 ```elixir
   match "/count/*path" do
     Proxy.forward conn, path, "http://count/count/"
